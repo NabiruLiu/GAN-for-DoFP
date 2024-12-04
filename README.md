@@ -1,11 +1,11 @@
-## Physics-Informed Multi-Branch Residual GAN for DoFP Polarization Images Reconstruction
+## End-to-end physics-informed multi-branch GAN for enhanced DoFP polarization image reconstruction
 
 ## Introduction
 This project implements a Generative Adversarial Network (GAN) designed to reconstruct Division-of-Focal Plane (DoFP) polarization images. The network leverages a physics-informed, multi-branch residual architecture to directly reconstruct intensity (I), degree of linear polarization (DoLP), and angle of polarization (AoP) from raw mosaic images. This approach aims to address limitations in spatial resolution and polarimetric accuracy commonly associated with DoFP systems.
 
 ## Features
 Physics-Informed Losses: Integrates physics-based constraints to enhance reconstruction fidelity.
-Multi-Branch Residual Architecture: Employs residual blocks to handle demosaicking and polarimetric reconstruction concurrently.
+End-to-end Architecture: Employs residual blocks to handle demosaicking and polarimetric reconstruction concurrently.
 Lightweight Model: With only 5.2 million parameters, the model is optimized for efficient training and deployment across various devices.
 
 ## Setup and Notes
