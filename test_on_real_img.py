@@ -54,9 +54,9 @@ SSIM_aop = SSIM(aop_pred,aop_true,data_range=1.0)
 SSIM_dolp = SSIM(dolp_pred,dolp_true,data_range=1.0)
 SSIM_s0 = SSIM(s0_pred,s0_true,data_range=1.0)
 
-RMSE_s0 = torch.mean((s0_pred-s0_true)**2)
-RMSE_aop = torch.mean((aop_pred-aop_true)**2)
-RMSE_dolp = torch.mean((dolp_pred-dolp_true)**2)
+RMSE_s0 = torch.sqrt(torch.mean((s0_pred-s0_true)**2))
+RMSE_aop = torch.sqrt(torch.mean((aop_pred-aop_true)**2))
+RMSE_dolp = torch.sqrt(torch.mean((dolp_pred-dolp_true)**2))
 
 PSNR_aop = PSNR(aop_pred,aop_true,data_range=1.0)
 PSNR_dolp = PSNR(dolp_pred,dolp_true,data_range=1.0)

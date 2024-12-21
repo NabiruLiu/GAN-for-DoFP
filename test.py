@@ -38,9 +38,9 @@ def test_gan(model, dataloader, device='cuda'):
             PSNR_dolp += PSNR(dolp_pred, dolp_true, data_range=1.0).item()
             PSNR_s0 += PSNR(s0_pred, s0_true, data_range=1.0).item()
             
-            RMSE_s0 += torch.mean((s0_pred - s0_true) ** 2).item()
-            RMSE_aop += torch.mean((aop_pred - aop_true) ** 2).item()
-            RMSE_dolp += torch.mean((dolp_pred - dolp_true) ** 2).item()
+            RMSE_s0 += torch.sqrt(torch.mean((s0_pred - s0_true) ** 2)).item()
+            RMSE_aop += torch.sqrt(torch.mean((aop_pred - aop_true) ** 2)).item()
+            RMSE_dolp += torch.sqrt(torch.mean((dolp_pred - dolp_true) ** 2)).item()
             
         SSIM_aop /= num_samples
         SSIM_dolp /= num_samples
