@@ -6,7 +6,7 @@ This project implements a Generative Adversarial Network (GAN) designed to recon
 ## Features
 Physics-Informed Losses: Integrates physics-based constraints to enhance reconstruction fidelity.
 End-to-end Architecture: Employs residual blocks to handle demosaicking and polarimetric reconstruction concurrently.
-Lightweight Model: With only 5.2 million parameters, the model is optimized for efficient training and deployment across various devices.
+Lightweight Model: With only 0.5 million parameters of Generator, the model is optimized for efficient training and deployment across various devices.
 
 ## Setup and Notes
 1. Place your datasets in the 'data' folder.
