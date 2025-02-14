@@ -21,6 +21,7 @@ Lightweight Model: With only 0.5 million parameters of Generator, the model is o
 
 # Citation
 Please cite our work if you use this code in your research.
+
 H. Liu, Z. Gu, S. Shi, Z. Li, X. Lei, Z. Liu, M. Song, J. Yang, C. Li, Z. Zhou, Z. Qiu, and J. Hong, "End-to-end physics-informed multi-branch GAN for enhanced DoFP polarization image reconstruction," Opt. Express 33, 7684-7704 (2025).
 
 # Network Architecture
